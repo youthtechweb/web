@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOUTH TECH</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/commons/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+    <!-- テストCSSエリア -->
+    <style>
+        .fb-info .author {
+            display: block;
+            color: #3C5994;
+            margin-bottom: 5px;
+            font-size: 4vw;
+        }
+    </style>
+
+</head>
+
+<script type="text/javascript">
+    //スクロールフェードイン
+    $(document).ready(function() {
+        $('.fuwat').css('visibility', 'hidden');
+        $('.fuwat2').css('visibility', 'hidden');
+        $(window).scroll(function() {
+            var windowHeight = $(window).height(),
+                topWindow = $(window).scrollTop();
+            $('.fuwat').each(function() {
+                var objectPosition = $(this).offset().top;
+                if (topWindow > objectPosition - windowHeight + 0) {
+                    $(this).addClass("fuwatAnime");
+                }
+            });
+            $('.fuwat2').each(function() {
+                var objectPosition = $(this).offset().top;
+                if (topWindow > objectPosition - windowHeight + 0) {
+                    $(this).addClass("fuwatAnime2");
+                }
+            });
+        });
+    });
+</script>
+
+<body id="page-top">
+    <!-- ナビゲーションエリア 固定-->
+    <div class="outer-menu">
+        <input class="checkbox-toggle" type="checkbox" />
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Top</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="activity.html">Activity</a></li>
+                        <li><a href="member.html">Member</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ロゴエリア 固定-->
+    <div class="">
+        <div style="margin-top:20px;">
+            <div class="container">
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8">
+                    <center>
+                        <a href="index.html">
+                            <img class="logo" src="img/logo_white_02.png" alt="title">
+                        </a>
+                    </center>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Member -->
+    <div class="">
+        <div class="container">
+            <div class="col-xs-12 col-sm-3 col-md-3">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="date" style="color:black; font-size:22px;margin-top:10px;">Member</div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+            </div>
+        </div>
+    </div>
+
+    <!-- メンバー -->
+    <div class="fuwat fuwatAnime" style="margin-top:5%;">
+        <div class="row">
+            <div class="col-xs-1 col-sm-3 col-md-3">
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- rintaro -->
+                    <img style="width:100%;height:30%" src="img/rintaro.jpg" alt="title">
+                </a>
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- mao -->
+                    <img style="width:100%;height:30%" src="img/mao.jpg" alt="title">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-1 col-sm-3 col-md-3">
+        </div>
+    </div>
+
+    <!-- メンバー -->
+    <div class="fuwat fuwatAnime" style="margin-top:5%;">
+        <div class="row">
+            <div class="col-xs-1 col-sm-3 col-md-3">
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- rintaro -->
+                    <img style="width:100%;height:30%" src="img/shiho.jpg" alt="title">
+                </a>
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- mao -->
+                    <img style="width:100%;height:30%" src="img/take.jpg" alt="title">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-1 col-sm-3 col-md-3">
+        </div>
+    </div>
+
+    <!-- メンバー -->
+    <div class="fuwat fuwatAnime" style="margin-top:5%;">
+        <div class="row">
+            <div class="col-xs-1 col-sm-3 col-md-3">
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- rintaro -->
+                    <img style="width:100%;height:30%" src="img/dai.jpg" alt="title">
+                </a>
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- mao -->
+                    <img style="width:100%;height:30%" src="img/kana.jpg" alt="title">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-1 col-sm-3 col-md-3">
+        </div>
+    </div>
+
+    <!-- メンバー -->
+    <div class="fuwat fuwatAnime" style="margin-top:5%;">
+        <div class="row">
+            <div class="col-xs-1 col-sm-3 col-md-3">
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- rintaro -->
+                    <img style="width:100%;height:30%" src="img/roka.jpg" alt="title">
+                </a>
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- mao -->
+                    <img style="width:100%;height:30%" src="img/hiroma.jpg" alt="title">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-1 col-sm-3 col-md-3">
+        </div>
+    </div>
+
+    <!-- メンバー -->
+    <div class="fuwat fuwatAnime" style="margin-top:5%;">
+        <div class="row">
+            <div class="col-xs-1 col-sm-3 col-md-3">
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- rintaro -->
+                    <img style="width:100%;height:30%" src="img/yuko.jpg" alt="title">
+                </a>
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- mao -->
+                    <img style="width:100%;height:30%" src="img/yasu.jpg" alt="title">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-1 col-sm-3 col-md-3">
+        </div>
+    </div>
+
+    <!-- メンバー -->
+    <div class="fuwat fuwatAnime" style="margin-top:5%;">
+        <div class="row">
+            <div class="col-xs-1 col-sm-3 col-md-3">
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- rintaro -->
+                    <img style="width:100%;height:30%" src="img/yoshika.jpg" alt="title">
+                </a>
+            </div>
+            <div class="col-xs-5 col-sm-3 col-md-3">
+                <a href="" class="author">
+                    <!-- mao -->
+                    <img style="width:100%;height:30%" src="img/takuya.jpg" alt="title">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-1 col-sm-3 col-md-3">
+        </div>
+    </div>
+
+
+
+    <!-- フッター -->
+    <div id="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 no-padding" style="margin-top: 20px; padding-left: 0;text-align: center">
+                    <p>Copyright &copy; 2018 YOUTH TECH. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <input id="base_url" type="hidden" value="https://lpshoot.thebase.in" />
+    <script type="text/javascript" src="https://basefile.s3.amazonaws.com/lpshoot/58ce845d3d28e/slick.min.js"></script>
+    </div>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>
