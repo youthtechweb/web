@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Col, Row} from 'react-bootstrap'
 import './style.css'
+import Header from './components/Header/Header.js'
+import Footer from './components/Footer/Footer.js'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
+import NavBar from "./components/NavBar/NavBar.js";
 
 class Main extends React.Component {
     constructor(props) {
@@ -10,9 +12,12 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <Router>
+            <div>
+                <NavBar />
+                <Header />
                 test
-            </Router>
+                <Footer />
+            </div>
         );
     }
 }
