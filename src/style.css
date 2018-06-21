@@ -44,25 +44,6 @@ body {
     font-family: 游ゴシック体, "Yu Gothic", YuGothic, sans-serif;
 }
 
-
-/* @media screen and (min-width: 768px) {
-    .date {
-        font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .date {
-        font-size: 30px;
-    }
-} */
-
-
-/* .date {
-    font-size: 20px;
-} */
-
-
 /*
 レスポンシブの場合は改行しない
 */
@@ -84,7 +65,6 @@ body {
     }
 }
 
-
 /*
 画面サイズが小さい場合改行する
 */
@@ -94,7 +74,6 @@ body {
         display: none;
     }
 }
-
 
 /*
 蛍光ペン
@@ -484,31 +463,6 @@ a span {
     }
 }
 
-
-/*
-②トップ
-*/
-
-
-/*
-③おもてなしとは
-*/
-
-
-/*
-④ワオ・ストーリー
-*/
-
-
-/*
-⑤活躍する女性社員
-*/
-
-
-/*
-⑥先輩社員の声
-*/
-
 .img-circle {
     border-radius: 100%;
 }
@@ -521,16 +475,6 @@ a span {
     width: 50%;
     height: 50%;
 }
-
-
-/*
-⑦メッセージ
-*/
-
-
-/*
-⑧募集要項
-*/
 
 table.company {
     width: 100%;
@@ -576,11 +520,6 @@ table.company td {
     width: 360px;
     padding-left: 20px;
 }
-
-
-/*
-⑨エントリーボタン
-*/
 
 .square_btn {
     margin: 30px;
@@ -832,4 +771,24 @@ h1 {
     height: 2px;
     background: #e5e5e5;
     transition: width 0.4s ease;
+}
+
+/*Activity*/
+.fb-info .author {
+    display: block;
+    color: #3C5994;
+    margin-bottom: 5px;
+    font-size: 4vw;
+}
+
+@media screen and (min-width: 768px) {
+    .date {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .date {
+        font-size: 30px;
+    }
 }
