@@ -24,63 +24,62 @@ const events = [
     }
 ];
 
-const Tags = (tags) => {
+const Tags = tags => {
     let tagString = "";
     tags.forEach(tag => tagString += `#${tag} `);
     return tagString;
 };
 
-const eventElem =  ({title, date, eventUrl, imageUrl, tags}) => {
-    return(
-        <div className="fuwat fuwatAnime" style={{marginTop: "10px"}}>
+const EventElem = (
+    {
+        event: {
+            title = '',
+            date = '',
+            eventUrl = '',
+            imageUrl = '',
+            tags = ''
+        }
+    }
+) => (
+    <div className="fuwat fuwatAnime" style={{marginTop: "10px"}}>
+        <div className="container">
+            <div className="col-xs-12 col-sm-3 col-md-3">
+            </div>
+            <div className="col-xs-12 col-sm-6 col-md-6">
+                <div className="date">{date}</div>
+                <div className="fb-info">
+                    <a href={eventUrl} className="author">{title}</a>
+                    <p className="message">{Tags(tags)}</p>
+                    <img style={{width: "100%", height: "10%"}} src={imageUrl} alt="title"/>
+                </div>
+            </div>
+            <div className="col-xs-12 col-sm-3 col-md-3">
+            </div>
+        </div>
+    </div>
+);
+
+const Activity = () => {
+    const eventList = events.map(event => (<EventElem event={event}/>));
+    console.log("eventList ->", eventList);
+    return (
+    <div>
+        <div className="">
             <div className="container">
                 <div className="col-xs-12 col-sm-3 col-md-3">
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-6">
-                    <div className="date">{date}</div>
-                    <div className="fb-info">
-                        <a href={eventUrl} className="author">{title}</a>
-                        <p className="message">{Tags(tags)}</p>
-                        <img style={{width: "100%", height:"10%"}} src={imageUrl} alt="title"/>
-                    </div>
+                    <div className="date" style={{color: "black", fontSize: "22px", marginTop: "10px"}}>Activity</div>
                 </div>
                 <div className="col-xs-12 col-sm-3 col-md-3">
                 </div>
             </div>
         </div>
-    );
+        <div>
+            {eventList}
+        </div>
+    </div>
+    )
 };
-
-class Activity extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        const eventList = [];
-        events.forEach((event) => {
-            eventList.unshift(eventElem(event))
-        });
-
-        return (
-            <div>
-                <div className="">
-                    <div className="container">
-                        <div className="col-xs-12 col-sm-3 col-md-3">
-                        </div>
-                        <div className="col-xs-12 col-sm-6 col-md-6">
-                            <div className="date" style={{color: "black", fontSize: "22px", marginTop: "10px"}}>Activity</div>
-                        </div>
-                        <div className="col-xs-12 col-sm-3 col-md-3">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    {eventList}
-                </div>
-            </div>
-        );
-    }
-}
 
 export default Activity
