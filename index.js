@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-app.set('port', 4343);
+app.set('port', process.env.PORT || 4343);
 
 app.use('/', express.static('./public'));
 
