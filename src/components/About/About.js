@@ -72,37 +72,33 @@ const About = () => (
                         </div>
                     </div>
                 </div>
+                <div className="fuwat fuwatAnime" style={{marginTop: "5%"}}>
+                    <div className="row">
+                        <div className="col-xs-3 col-sm-3 col-md-3">
+                            <a href="https://youthtech.connpass.com/" className="author" style={{width:"100%"}}>
+                                <img style={{width: "100%", height: "30%"}} src="image/assets/connpass_icon.jpeg" alt="title"/>
+                            </a>
+                        </div>
+                        <div className="col-xs-3 col-sm-3 col-md-3">
+                            <a href="https://join.slack.com/t/youthtechchanel/shared_invite/enQtMzgwOTY2NDQzODYxLThlYzk1OWI5OWU0MTEwZDQ0ODkyMGMxNjI4ODFkZDhkN2U3OGNhZTQzNzZiYzMzNTliZTgxYzA4MGEzMmRhNWY"
+                               className="author">
+                                <img style={{width: "100%", height: "30%"}} src="image/assets/slack_icon.png" alt="title"/>
+                            </a>
+                        </div>
+                        <div className="col-xs-3 col-sm-3 col-md-3">
+                            <a href="https://www.facebook.com/groups/763788887157082" className="author">
+                                <img style={{width: "100%", height: "30%"}} src="image/assets/facebook_icon.png" alt="title"/>
+                            </a>
+                        </div>
+                        <div className="col-xs-3 col-sm-3 col-md-3">
+                            <a href="https://twitter.com/youthtechtokyo" className="author">
+                                <img style={{width: "100%", height: "30%"}} src="image/assets/twitter_icon.png" alt="title"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="col-xs-12 col-sm-3 col-md-3">
-            </div>
-        </div>
-        <div className="fuwat fuwatAnime" style={{marginTop: "5%"}}>
-            <div className="row">
-                <div className="col-xs-2 col-sm-2 col-md-2">
-                </div>
-                <div className="col-xs-2 col-sm-2 col-md-2">
-                    <a href="https://youthtech.connpass.com/" className="author">
-                        <img style={{width: "100%", height: "30%"}} src="image/assets/connpass_icon.jpeg" alt="title"/>
-                    </a>
-                </div>
-                <div className="col-xs-2 col-sm-2 col-md-2">
-                    <a href="https://join.slack.com/t/youthtechchanel/shared_invite/enQtMzgwOTY2NDQzODYxLThlYzk1OWI5OWU0MTEwZDQ0ODkyMGMxNjI4ODFkZDhkN2U3OGNhZTQzNzZiYzMzNTliZTgxYzA4MGEzMmRhNWY"
-                       className="author">
-                        <img style={{width: "100%", height: "30%"}} src="image/assets/slack_icon.png" alt="title"/>
-                    </a>
-                </div>
-                <div className="col-xs-2 col-sm-2 col-md-2">
-                    <a href="https://www.facebook.com/groups/763788887157082" className="author">
-                        <img style={{width: "100%", height: "30%"}} src="image/assets/facebook_icon.png" alt="title"/>
-                    </a>
-                </div>
-                <div className="col-xs-2 col-sm-2 col-md-2">
-                    <a href="https://twitter.com/youthtechtokyo" className="author">
-                        <img style={{width: "100%", height: "30%"}} src="image/assets/twitter_icon.png" alt="title"/>
-                    </a>
-                </div>
-            </div>
-            <div className="col-xs-2 col-sm-2 col-md-2">
             </div>
         </div>
     </div>
