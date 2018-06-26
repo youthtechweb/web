@@ -1,0 +1,794 @@
+/*
+==================================================
+  共通系CSS
+==================================================
+*/
+
+
+/*
+フォントサイズのレスポンシブ対応
+*/
+
+body {
+    font-size: 12px;
+    color: #59524b;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.fb-info {
+    color: #337ab7 !important;
+}
+
+
+/*
+フォント
+*/
+
+#mintyo {
+    font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: bold;
+}
+
+#top_font {
+    font-family: 游ゴシック体, "Yu Gothic", YuGothic, sans-serif;
+}
+
+/*
+レスポンシブの場合は改行しない
+*/
+
+@media screen and (max-width: 768px) {
+    body br {
+        display: none;
+    }
+}
+
+
+/*
+例外的改行
+*/
+
+@media screen and (max-width: 768px) {
+    .kaigyo br {
+        display: block;
+    }
+}
+
+/*
+画面サイズが小さい場合改行する
+*/
+
+@media screen and (min-width: 768px) {
+    .kaigyo_min br {
+        display: none;
+    }
+}
+
+/*
+蛍光ペン
+*/
+
+.marker {
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/*
+見出し
+*/
+
+.title-font1 {
+    color: #ffffff;
+    margin-top: 180px;
+}
+
+.title-font2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3.title-un-two {
+    margin-top: 0;
+}
+
+.title-un-two {
+    margin-bottom: 45px;
+    text-align: left;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+h3 .small {
+    padding-left: 30px;
+    font-size: 54%;
+    color: #4c4c4c;
+    font-family: 游ゴシック体, "Yu Gothic", YuGothic, sans-serif;
+    font-weight: normal;
+    line-height: 1;
+}
+
+h4.min {
+    font-family: "FOT-筑紫明朝 Pr6 M", TsukuMinPr6-M, serif;
+    color: #2f2f2f;
+    font-size: 140%;
+}
+
+p {
+    line-height: 24px;
+    color: rgb(77, 77, 77);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*
+ボーダー
+*/
+
+#border-1 {
+    border: 1px solid #555;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+/*
+モジュール系
+*/
+
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.fuwatAnime2 {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 4s;
+    -ms-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-name: fuwatAnime2;
+    -ms-animation-name: fuwatAnime2;
+    animation-name: fuwatAnime2;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fuwatAnime2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fuwatAnime_right {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 4s;
+    -ms-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-name: fuwatAnime_right;
+    -ms-animation-name: fuwatAnime_right;
+    animation-name: fuwatAnime_right;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime_right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fuwatAnime_right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fuwatAnime_left {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 4s;
+    -ms-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-name: fuwatAnime_left;
+    -ms-animation-name: fuwatAnime_left;
+    animation-name: fuwatAnime_left;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime_left {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fuwatAnime_left {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+/*
+区切り線
+*/
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+}
+
+.hr-text:before {
+    content: '';
+    background: -webkit-linear-gradient(left, transparent, #59524b, transparent);
+    background: linear-gradient(to right, transparent, #59524b, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: #59524b;
+    background-color: #fcfcfa;
+}
+
+
+/*
+スクロールボタン
+*/
+
+a {
+    /* padding-top: 70px; */
+}
+
+a span {
+    position: absolute;
+    /*top: 0;*/
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+
+/*
+画像に影をつける
+*/
+
+.shadow {
+    margin-top: 5px;
+    /* 画像の上の余白*/
+    display: inline-block;
+    box-shadow: 0px 5px 15px -5px #ccc;
+    /*横方向　下方向　ぼかし　広がり　色 */
+}
+
+
+/*
+==================================================
+  部分系CSS
+==================================================
+*/
+
+
+/*
+①ナビゲーションバー
+*/
+
+
+/*
+ロゴアイコンのレスポンシブ対応
+*/
+
+.logo {
+    width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        width: 200px;
+    }
+}
+
+.logo_top {
+    width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo_top {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo_top {
+        width: 200px;
+    }
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.member_profile {
+    margin-bottom: 40px;
+}
+
+#infomation .content .member-img img {
+    width: 50%;
+    height: 50%;
+}
+
+table.company {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    font-size: 12px;
+}
+
+table.company th,
+table.company td {
+    padding: 10px;
+}
+
+table.company th {
+    background: #ffffff;
+    vertical-align: middle;
+    text-align: left;
+    width: 25%;
+    overflow: visible;
+    position: relative;
+}
+
+@-moz-document url-prefix() {
+    table.company th::after {
+        float: right;
+        padding: 0;
+        left: 30px;
+        top: 10px;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: relative;
+        pointer-events: none;
+        border: 10px solid transparent;
+        border-left: #295890 10px solid;
+        margin-top: -10px;
+    }
+}
+
+table.company td {
+    background: #f8f8f8;
+    width: 360px;
+    padding-left: 20px;
+}
+
+.square_btn {
+    margin: 30px;
+    font-size: 28px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f5c8a2;
+    /*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+.square_btn:active {
+    /*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    /*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    /*影を小さく*/
+    border-bottom: none;
+}
+
+
+/* ナビゲーションバー */
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300');
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+}
+
+.outer-menu {
+    position: fixed;
+    top: 0;
+    right: 60px;
+    z-index: 1;
+}
+
+.outer-menu .checkbox-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+}
+
+.outer-menu .checkbox-toggle:checked+.hamburger>div {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.outer-menu .checkbox-toggle:checked+.hamburger>div:before,
+.outer-menu .checkbox-toggle:checked+.hamburger>div:after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.outer-menu .checkbox-toggle:checked+.hamburger>div:after {
+    opacity: 0;
+}
+
+.outer-menu .checkbox-toggle:checked~.menu {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.outer-menu .checkbox-toggle:checked~.menu>div {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition-duration: .75s;
+}
+
+.outer-menu .checkbox-toggle:checked~.menu>div>div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+}
+
+.outer-menu .checkbox-toggle:hover+.hamburger {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.outer-menu .checkbox-toggle:checked:hover+.hamburger>div {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.outer-menu .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: .5em 1em;
+    background: #555555b8;
+    border-radius: 0 0.12em 0.12em 0;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-menu .hamburger>div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #FEFEFE;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-menu .hamburger>div:before,
+.outer-menu .hamburger>div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    transition: all 0.4s ease;
+}
+
+.outer-menu .hamburger>div:after {
+    top: 10px;
+}
+
+.outer-menu .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-menu .menu>div {
+    width: 200vw;
+    height: 200vw;
+    color: #FEFEFE;
+    background: #555555b8;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    flex: none;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-menu .menu>div>div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    overflow-y: auto;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-menu .menu>div>div>ul {
+    list-style: none;
+    padding: 0 1em;
+    margin: 0;
+    display: block;
+    max-height: 100vh;
+}
+
+.outer-menu .menu>div>div>ul>li {
+    padding: 0;
+    margin: 1em;
+    font-size: 24px;
+    display: block;
+}
+
+.outer-menu .menu>div>div>ul>li>a {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.outer-menu .menu>div>div>ul>li>a:hover {
+    color: #e5e5e5;
+}
+
+.outer-menu .menu>div>div>ul>li>a:hover:after {
+    width: 100%;
+}
+
+.outer-menu .menu>div>div>ul>li>a:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -0.15em;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #e5e5e5;
+    transition: width 0.4s ease;
+}
+
+/*Activity*/
+.fb-info .author {
+    display: block;
+    color: #3C5994;
+    margin-bottom: 5px;
+    font-size: 4vw;
+}
+
+@media screen and (min-width: 768px) {
+    .date {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .date {
+        font-size: 30px;
+    }
+}
