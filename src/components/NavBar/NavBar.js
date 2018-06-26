@@ -5,19 +5,18 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            open: false
+            openStatus: false
         };
     }
     openMenu(openStatus) {
-        this.setState({open: openStatus})
+        this.setState({openStatus: openStatus})
     }
 
     render() {
         const { openStatus }= this.state;
-
         return (
             <div className="outer-menu">
-                <input className="checkbox-toggle" type="checkbox" checked={this.state.open} onClick={() => this.openMenu(!openStatus)}/>
+                <input className="checkbox-toggle" type="checkbox" checked={this.state.openStatus} onClick={() => this.openMenu(!openStatus)}/>
                 <div className="hamburger">
                     <div></div>
                 </div>

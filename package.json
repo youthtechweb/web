@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daitasu/web.git"
+    "url": "git+https://github.com/youthtechweb/webapp.git"
   },
   "author": "youthtechtokyo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/daitasu/web/issues"
+    "url": "https://github.com/youthtechweb/webapp/issues"
   },
-  "homepage": "https://github.com/daitasu/web#readme",
+  "homepage": "https://github.com/youthtechweb/webapp#readme",
   "dependencies": {
     "npm": "^6.1.0"
   },

@@ -1,22 +1,23 @@
 import React from 'react'
 
 const imageBaseUrl = 'image/members/';
+const baseBlogUrl = 'https://medium.com/@youthtechtokyo/';
 const members = [
-    {name:"RINTARO", image:'rintaro.jpg'},
-    {name:"MAO", image:'mao.jpg'},
-    {name:"SHIHO", image:'shiho.jpg'},
-    {name:"TAKE", image:'take.jpg'},
-    {name:"DAI", image:'dai.jpg'},
-    {name:"KANA", image:'kana.jpg'},
-    {name:"ROKA", image:'roka.jpg'},
-    {name:"HIROMA", image:'hiroma.jpg'},
-    {name:"YUKO", image:'yuko.jpg'},
-    {name:"YASU", image:'yasu.jpg'},
-    {name:"YOSHIKA", image:'yoshika.jpg'}
+    {name:"RINTARO", image:'rintaro.jpg', blog: ''},
+    {name:"MAO", image:'mao.jpg', blog: ''},
+    {name:"SHIHO", image:'shiho.jpg', blog: ''},
+    {name:"TAKE", image:'take.jpg', blog: ''},
+    {name:"DAI", image:'dai.jpg', blog: ''},
+    {name:"KANA", image:'kana.jpg', blog: ''},
+    {name:"ROKA", image:'roka.jpg', blog: ''},
+    {name:"HIROMA", image:'hiroma.jpg', blog: ''},
+    {name:"YUKO", image:'yuko.jpg', blog: ''},
+    {name:"YASU", image:'yasu.jpg', blog: ''},
+    {name:"YOSHIKA", image:'yoshika.jpg', blog: ''}
 ];
 
 const User = ({user}) => (
-    <a href="" className="author">
+    <a href={baseBlogUrl + user.blog} className="author">
         <img style={{width: "100%", height: "30%"}} src={imageBaseUrl + user.image} alt="title"/>
     </a>
 );
